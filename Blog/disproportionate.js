@@ -347,7 +347,7 @@ $(document).ready(function() {
       	'box-shadow': '0px 0px 0px #888'
   		});
     }
-    if (document.body.scrollTop > 1700 && document.body.scrollTop < 2800) {
+    if (document.body.scrollTop > 1600 && document.body.scrollTop < 2800) {
       chart1.options.legend.display = true;
       $("#chart1_container_placeholder").css({'display':'none'});
       $("#chart1_container").css({
@@ -382,7 +382,7 @@ $(document).ready(function() {
     		});
       }
     }
-    if (document.body.scrollTop > 2400 && document.body.scrollTop < 3500) {
+    if (document.body.scrollTop > 2300 && document.body.scrollTop < 3500) {
       chart2.options.legend.display = true;
       $("#chart2_container_placeholder").css({'display':'none'});
       $("#chart2_container").css({
@@ -417,7 +417,7 @@ $(document).ready(function() {
     		});
       }
     }
-    if (document.body.scrollTop > 3000 && document.body.scrollTop < 4100) {
+    if (document.body.scrollTop > 2900 && document.body.scrollTop < 4100) {
       chart3.options.legend.display = true;
       $("#chart3_container_placeholder").css({'display':'none'});
       $("#chart3_container").css({
