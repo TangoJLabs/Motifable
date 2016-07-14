@@ -292,6 +292,7 @@ $(document).ready(function() {
     $("#text_title_text").css({'font-size': '30px'});
     $(".text_normal").css({'width':'75%'});
     $("#author").css({'margin-top':'50px'});
+    $("#link_box").css({'display':'none'});
   }
 
   $("#link_box").mouseenter(function() {
