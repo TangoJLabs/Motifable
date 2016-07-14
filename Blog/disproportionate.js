@@ -286,7 +286,10 @@ $(document).ready(function() {
     chartWidth = '80%';
     chartMarginLeft = '0px';
     chartLeft = '10%';
-    $("#text_title").css({'font-size':'30px'});
+    $("#text_title").css({
+      'font-size':'24px',
+      'top': '0px'
+    });
     $(".text_normal").css({'width':'75%'});
     $("#author").css({'margin-top':'50px'});
   }
