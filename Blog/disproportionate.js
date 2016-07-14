@@ -279,6 +279,18 @@ $(document).ready(function() {
     $("#chart3_container").css({'display':'none'});
   }
 
+  var chartWidth = '500px';
+  var chartMarginLeft = '-250px';
+  var chartLeft = '50%';
+  if ($('body').width() < 500) {
+    chartWidth = '80%';
+    chartMarginLeft = '0px';
+    chartLeft = '10%';
+    $("#text_title").css({'font-size':'30px'});
+    $(".text_normal").css({'width':'75%'});
+    $("#author").css({'margin-top':'50px'});
+  }
+
   $("#link_box").mouseenter(function() {
     $("#link_box").animate({
       left: "0px"
@@ -339,9 +351,9 @@ $(document).ready(function() {
         'position': 'relative',
         'top': '0',
         'margin-top': '50px',
-        'left': '50%',
-        'margin-left': '-250px',
-        'width': '500px',
+        'left': chartLeft,
+        'margin-left': chartMarginLeft,
+        'width': chartWidth,
         'height': '500px',
         '-webkit-box-shadow': '0px 0px 0px #888',
       	'-moz-box-shadow': '0px 0px 0px #888',
@@ -374,9 +386,9 @@ $(document).ready(function() {
         'position': 'relative',
         'top': '0',
         'margin-top': '50px',
-        'left': '50%',
-        'margin-left': '-250px',
-        'width': '500px',
+        'left': chartLeft,
+        'margin-left': chartMarginLeft,
+        'width': chartWidth,
         'height': '500px',
         '-webkit-box-shadow': '0px 0px 0px #888',
       	'-moz-box-shadow': '0px 0px 0px #888',
@@ -409,9 +421,9 @@ $(document).ready(function() {
         'position': 'relative',
         'top': '0',
         'margin-top': '50px',
-        'left': '50%',
-        'margin-left': '-250px',
-        'width': '500px',
+        'left': chartLeft,
+        'margin-left': chartMarginLeft,
+        'width': chartWidth,
         'height': '500px',
         '-webkit-box-shadow': '0px 0px 0px #888',
       	'-moz-box-shadow': '0px 0px 0px #888',
