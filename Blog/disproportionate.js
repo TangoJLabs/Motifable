@@ -314,7 +314,7 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-    console.log("SCROLLING: " + document.body.scrollTop);
+    // console.log("SCROLLING: " + document.body.scrollTop);
     if (document.body.scrollTop > 50) {
       $("#text_title").css({
         'top': 0,
