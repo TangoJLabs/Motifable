@@ -282,14 +282,14 @@ $(document).ready(function() {
   var chartWidth = '500px';
   var chartMarginLeft = '-250px';
   var chartLeft = '50%';
+  var textTitleTop = '50px';
   if ($('body').width() < 500) {
     chartWidth = '80%';
     chartMarginLeft = '0px';
     chartLeft = '10%';
-    $("#text_title").css({
-      'font-size':'24px',
-      'top': '0px'
-    });
+    textTitleTop = '0px';
+    $("#text_title").css({'top': textTitleTop});
+    $("#text_title_text").css({'font-size': '30px'});
     $(".text_normal").css({'width':'75%'});
     $("#author").css({'margin-top':'50px'});
   }
@@ -333,7 +333,7 @@ $(document).ready(function() {
   		// });
     } else {
       $("#text_title").css({
-        'top': 50,
+        'top': textTitleTop,
         'position': 'absolute'
   		});
       $("#picture_box").css({
