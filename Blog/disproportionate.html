@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<meta name="keywords" content="Crude Oil, CL1, CL, NYMEX, algorithm, futures prices, futures contract, Cushing, OK, Month 1" />
+		<meta name="description" content="CrudeCL is a custom algorithm for predicting NYMEX CL futures contract prices." />
+		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+		<title>Motifable Blog</title>
+		<link rel="icon"
+			type="image/png"
+			href="m_logo.png" />
+		<!--[if IE]>
+		<script type="text/javascript" src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- CSS files -->
+		  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Abel|Rajdhani' rel='stylesheet' type='text/css'>
+			<!-- <link href="https://fonts.googleapis.com/css?family=Ek+Mukta:200|Oswald:300|Oxygen:300|Palanquin:200|Rajdhani|Roboto+Condensed:300" rel="stylesheet"> -->
+			<!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,300italic|Assistant|Catamaran' rel='stylesheet' type='text/css'> -->
+			<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+			<link href="disproportionate.css" rel="stylesheet" type="text/css">
+		<!-- Script files -->
+			<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+			<script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
+      <script type="text/javascript" defer src="disproportionate.js"></script>
+			<script>
+
+			</script>
+	</head>
+	<body>
+
+		<div id="text_title">Disproportionate</div>
+		<div id="text_title_placeholder"></div>
+		<div id="disclaimer_background"></div>
+		<div id="picture_box">
+			<div id="picture"></div>
+			<div id="picture_box_extra"></div>
+			<div id="picture_box_extra2"></div>
+			<div id="picture_box_extra3"></div>
+		</div>
+		<div id="picture_box_placeholder"></div>
+
+		<div id="link_box">
+			<div id="link_box_image"></div>
+		</div>
+
+		<div id="author">By <a href="mailto:sean@tangojlabs.com">Sean Hart</a> *</div>
+		<div id="disclaimer">* Please note that blog posts may not reflect the views of Motifable.</div>
+		<div id="text1" class="text text_normal">
+			Some sloppy analytics have been pushed out by various media sources in recent days in
+			response to the Black Lives Matter movement.  Anyone with basic Excel skills can gather some
+			data and throw together a pivot table, but to do so thinking that you’ve uncovered something
+			meaningful is arrogant, deceitful, and makes for a shabby analyst.
+		</div>
+		<div id="text2" class="text text_normal">
+			Real data comes from real life, and as such, it comes from many individual stories.  A good
+			analyst is not a data pusher, but a storyteller – someone who asks the right questions of the
+			data until all those individual stories are woven into a single tale that has real and predictive
+			meaning in our daily lives.
+		</div>
+		<div id="text3" class="text text_normal">
+			Two of the main arguments spouted by these data
+			<a href="https://yourlogicalfallacyis.com/the-texas-sharpshooter"
+				title="https://yourlogicalfallacyis.com/the-texas-sharpshooter">“sharpshooters”</a>
+			center around:
+			</br>
+			</br><div id="One1" class="one"></div>	Black people are most often killed by other black people, and
+			</br><div id="Two1" class="two"></div>	Cops kill more white people than black people
+		</div>
+		<div id="text4" class="text text_normal">
+			<a class="section_title"><div id="One2" class="one"></div> The black-on-black crime argument has several problems.</a>
+			</br>
+			</br>1.	You may not have heard about it, but black people are
+			<a href="http://www.preventblackcrime.com/pbc.nsf/pages/Details"
+					title="
+							1: http://www.preventblackcrime.com/pbc.nsf/pages/Details
+							</br>2: http://www.chicagotribune.com/news/columnists/ct-black-crime-glanton-talk-20151206-story.html
+							</br>3: http://www.ulpbc.org/programs-services/community-development/140-black-on-black-crime-prevention.html
+							</br>4: http://www.slate.com/articles/news_and_politics/politics/2014/12/black_community_is_concerned_with_black_on_black_crime_suggesting_otherwise.html
+					">already trying
+			</a>
+			to reduce black-on-black crime. You don’t often see this in the national news because
+			most solutions come at the local level.
+			</br>
+			</br>2.	This argument is actually a
+			<a href="https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/150/Red_Herring"
+				title="https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/150/Red_Herring">Red Herring</a>
+			(or a
+			<a href="https://en.wikipedia.org/wiki/Chewbacca_defense"
+				title="https://en.wikipedia.org/wiki/Chewbacca_defense">Chewbacca defense</a>
+			, if you prefer).
+			Police shootings are civic issues and therefore are resolved through publicly addressing the problem.
+			Black Lives Matter is a Civil Rights movement about a civic issue; it must be very public to be effective.
+			You can’t protest march against criminals; they aren’t going to line up to stop you.
+			</br>
+			</br>3.	Black-on-black crime is a complicated social issue that has been shown to have partial roots in
+			<a href="http://www.nytimes.com/2014/03/21/us/school-data-finds-pattern-of-inequality-along-racial-lines.html"
+					title="
+							1: http://www.nytimes.com/2014/03/21/us/school-data-finds-pattern-of-inequality-along-racial-lines.html
+							</br>2: http://edlabs.harvard.edu/link-between-education-inequality
+							</br>3: http://blogs.wsj.com/washwire/2015/06/11/racial-gerrymandering-as-bad-as-the-other-kind/
+							</br>4: https://www.washingtonpost.com/news/wonk/wp/2014/10/28/what-the-u-s-economy-would-look-like-if-racial-inequality-didnt-exist/
+					">unequal social structures
+			</a>.
+			Thinking that other social inequalities should
+			be addressed before police shootings is a valid argument, but unequal educational
+			opportunities aren’t going to walk up to your car window and shoot you – it’s killer
+			effects are much more subtle, so BLM (Black Lives Matter) has an urgent and emotional
+			nature.  Many black boys grow up in an environment where the
+			<a href="http://www.theatlantic.com/politics/archive/2016/07/the-near-certainty-of-anti-police-violence/490541/"
+				title="http://www.theatlantic.com/politics/archive/2016/07/the-near-certainty-of-anti-police-violence/490541/">police lack legitimacy</a>
+			, and their authority comes merely due to superior force of arms.  This makes for a legal
+			authority that appears no different than another street gang.  Many black men don’t
+			perceive that they will receive justice in the legal and court system, so violence becomes
+			the default system of authority.  These perceptions of legal bias are somewhat
+			<a href="http://www.bjs.gov/index.cfm?ty=tp&tid=702"
+				title="http://www.bjs.gov/index.cfm?ty=tp&tid=702">corroborated by the data</a>
+			. The very fact that BLM is addressing the police and legal
+			system is a positive sign that the legal and court systems are being perceived as more of
+			an authority by black communities.  Now is the time to support that effort, not hinder it.
+			</div>
+		<div id="text5" class="text text_normal">
+			<a class="section_title"><div id="Two2" class="two"></div>  Cops do kill more white people than black people.</a>
+			</br>
+			</br>
+			This statement is true, and the most obvious counter is to say that the
+			<a href="http://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=CF"
+				title="http://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=CF">60+% white population</a>
+			greatly outnumbers the
+			<a href="http://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=CF"
+				title="http://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=CF">12% black population</a>
+			, but this would also be a sloppy analysis if we
+			stopped there.  The story of one member of the population is not statistically analogous to
+			another person’s story in every situation.  What if one group is more often engaged in
+			dangerous situations with the police?  There are real stories behind this data.
+			</br>
+			</br>
+			So, what exactly is the story here?  We have a movement concerned about the apparent unjust
+			shootings of black men.  What would constitute an unjust shooting?  First, a reasonable person
+			(remember, all sides to an argument will have unreasonable people, but let’s focus on the
+			general consensus) will argue that a non-attacking and nonthreatening person does not deserve
+			to be shot.  Second, shooting an unarmed person is often considered not justifiable (certain
+			circumstances may justify shooting a threatening unarmed person, but the argument for more
+			nonlethal options to these situations is an important topic not under discussion here).  So, what
+			data do we have on these types of stories where unarmed and/or non-attacking people are
+			killed by police?
+		</div>
+		<div id="text6" class="text text_normal">
+			For over a year and a half, the Washington Post has
+			<a href="https://www.washingtonpost.com/graphics/national/police-shootings/"
+				title="https://www.washingtonpost.com/graphics/national/police-shootings/">tracked police shootings</a>
+			in the United States.  Of the 1,365 police shootings of confirmed white, black, and Hispanic suspects,
+			the majority are white (732), while 381 are black.  However, 44.4% of black suspects were not attacking,
+			while only 36.8% of white suspects were not attacking.  As you can see, the Hispanic population deserves an
+			investigation into that spike to over 50%, but that is for another time.
+		</div>
+
+		<div id="chart1_container">
+			<canvas id="chart1"></canvas>
+		</div>
+		<div id="chart1_container_placeholder"></div>
+
+		<div id="text7" class="text text_normal">
+			Now let’s add unarmed to nonattacking.  White people are at an advantage with unarmed suspects shootings
+			only at 7% compared to nearly 12% for blacks.
+		</div>
+
+		<div id="chart2_container">
+			<canvas id="chart2"></canvas>
+		</div>
+		<div id="chart2_container_placeholder"></div>
+
+		<div id="text8" class="text text_normal">
+			Now let’s dig into the meat of the story.  Let’s use non-attacking as the base of the data since a
+			reasonable person would conclude that deadly force would not be needed in non-attacking
+			situations.  Of all non-attacking white suspects, 23.7% were unarmed while 36.3% of black non-
+			attacking suspects were unarmed, a 12.6% discrepancy.
+		</div>
+
+		<div id="chart3_container">
+			<canvas id="chart3"></canvas>
+		</div>
+		<div id="chart3_container_placeholder"></div>
+
+		<div id="text9" class="text text_normal">
+			Perhaps these differences seem small to you.  Even this amount of a difference in policing has a
+			distinct societal effect that compounds other social wounds.  This data comes from real stories,
+			and close investigation may reveal some of the shootings of unarmed non-attacking black men
+			were justified.  However, there is a clear difference in how black men are handled in these
+			situations.  Is that due to the color of their skin?  Is this symptomatic of intentional racism, or is
+			there some type of psychological bias in our society toward dark skin that makes many people
+			assume bad intentions?  These questions deserve answers precisely because we have these
+			serious symptoms.
+		</div>
+		<div id="text10" class="text text_normal">
+			To counter BLM with “All Lives Matter” is to either deliberately suppress the concerns of fellow
+			citizens or to unintuitively misinterpret their intentions.  You may not agree with their
+			arguments or their methods, but the data is clear; Black Lives Matter at least deserves your
+			empathy.
+		</div>
+		<div id="footer_final">
+			If you notice discrepancies in this analysis or have feedback, please contact
+			<a href="mailto:sean@tangojlabs.com">sean@tangojlabs.com</a>
+			</br>
+		</div>
+
+	</body>
+</html>
